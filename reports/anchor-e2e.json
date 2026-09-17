@@ -1,0 +1,95 @@
+{
+  "at": "2026-09-15T20:45:55.452Z",
+  "anchor": "http://localhost:4200",
+  "steps": [
+    {
+      "msg": "SEP-1 keşif",
+      "signing": "GBS62T3W…",
+      "authUrl": "http://localhost:4200/auth",
+      "t": "2026-09-15T20:45:55.481Z"
+    },
+    {
+      "msg": "SEP-10 kimlik doğrulandı",
+      "t": "2026-09-15T20:45:55.504Z"
+    },
+    {
+      "msg": "SEP-24 /info: Ripcord ilanı okundu",
+      "max_delivery_seconds": 70,
+      "modes": [
+        "claimable_balance"
+      ],
+      "t": "2026-09-15T20:45:55.506Z"
+    },
+    {
+      "msg": "A: anchor ödeme bekliyor",
+      "id": "6a20c857-e88f-4e0c-b7df-96251d07b254",
+      "memo": "rc:6a20c857-e88",
+      "escrow": true,
+      "delivery": 70,
+      "t": "2026-09-15T20:45:56.111Z"
+    },
+    {
+      "msg": "✓ A tamamlandı: anchor T'den önce talep etti",
+      "outcome": "claimed_by_anchor",
+      "tx": "dd5b07203d9673022f1749f678bd687071849ff946eadf1cc7d0251860c57897",
+      "t": "2026-09-15T20:46:08.749Z"
+    },
+    {
+      "msg": "❄ anchor donduruldu",
+      "t": "2026-09-15T20:46:08.753Z"
+    },
+    {
+      "msg": "B: anchor ödeme bekliyor",
+      "id": "1bc29f80-c013-4aa9-bce8-2541ec453c38",
+      "memo": "rc:1bc29f80-c01",
+      "escrow": true,
+      "delivery": 70,
+      "t": "2026-09-15T20:46:08.763Z"
+    },
+    {
+      "msg": "emanet kuruldu, anchor sessiz",
+      "balanceId": "0000000097795360c7860f6d2429e23bee4fe5665623113e3e4b617c2807c85f30b758c6",
+      "userBalance": "480.0000000",
+      "t": "2026-09-15T20:46:12.871Z"
+    },
+    {
+      "msg": "T'ye 75 sn bekleniyor…",
+      "t": "2026-09-15T20:46:12.871Z"
+    },
+    {
+      "msg": "✓ B: kullanıcı parasını geri aldı — anchor zombi, kimse onaylamadı",
+      "tx": "77489d201a21bfce1e08d6087991f27b5c7f4c608d01aee005bb678588529c68",
+      "userBalance": "490.0000000",
+      "t": "2026-09-15T20:47:32.300Z"
+    },
+    {
+      "msg": "✓ B: anchor kaydı reclaimed_by_user oldu",
+      "status": "refunded",
+      "outcome": "reclaimed_by_user",
+      "t": "2026-09-15T20:47:36.343Z"
+    },
+    {
+      "msg": "C: anchor ödeme bekliyor",
+      "id": "7cc43d63-9f02-45db-b36f-e11f52e1d1f2",
+      "memo": "rc:7cc43d63-9f0",
+      "escrow": false,
+      "delivery": null,
+      "t": "2026-09-15T20:47:36.360Z"
+    },
+    {
+      "msg": "✗ C: para anchor hesabında, durum değişmiyor, kullanıcının yapabileceği hiçbir şey yok",
+      "status": "pending_anchor",
+      "anchorBalance": "20.0000000",
+      "userBalance": "480.0000000",
+      "t": "2026-09-15T20:47:50.864Z"
+    }
+  ],
+  "summary": {
+    "before": "500.0000000",
+    "after": "480.0000000",
+    "A": "claimed_by_anchor",
+    "B": "reclaimed_by_user",
+    "C": "pending_anchor"
+  },
+  "result": "PASS"
+}

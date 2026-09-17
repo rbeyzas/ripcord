@@ -1,0 +1,81 @@
+{
+  "network": "testnet",
+  "at": "2026-09-15T21:02:44.004Z",
+  "steps": [
+    {
+      "msg": "Hesaplar fonlandı, RIP dağıtıldı",
+      "anchor": "GBZP46NBKFPFGF3VPNVUMITFGNMTQ2JBVZK2B3BM2YEV3GZTPYGQKUSU",
+      "user": "GC7IYQIOLUFV5R5HKLEYIOUS2FGMQKLV7RTNN4INTNSLOT65BLCCIL4U",
+      "arbiter": "GCFYPE2UZWQ656GN3S5BL6RFGBE2MKORLQ546ADNNH7UGULOPZOXU5OW",
+      "t": "2026-09-15T20:59:02.140Z"
+    },
+    {
+      "msg": "SAC deploy edildi",
+      "token": "CBVOWRFRBWBWPSISEBEZ7LA6H5DPT4IHA5EMDZZISSC4KDPERUZJOVAH",
+      "t": "2026-09-15T20:59:07.658Z"
+    },
+    {
+      "msg": "Sözleşme deploy + init",
+      "contract": "CCKGTC4IIHONXWXIZI33T5SYXAGPWUCEKCJBNY5YZRDTPGBSGYZUPVLV",
+      "explorer": "https://stellar.expert/explorer/testnet/contract/CCKGTC4IIHONXWXIZI33T5SYXAGPWUCEKCJBNY5YZRDTPGBSGYZUPVLV",
+      "t": "2026-09-15T20:59:22.691Z"
+    },
+    {
+      "msg": "✓ Teminatsız anchor'a yükümlülük açılamadı (InsufficientBond)",
+      "t": "2026-09-15T20:59:23.059Z"
+    },
+    {
+      "msg": "✓ Teminatı aşan yükümlülük reddedildi — ödeme gücü zincirde uygulanıyor",
+      "t": "2026-09-15T20:59:27.235Z"
+    },
+    {
+      "msg": "✓ A: claim edildi; itiraz penceresi kapanmadan finalize edilemiyor",
+      "t": "2026-09-15T20:59:43.205Z"
+    },
+    {
+      "msg": "✓ A: pencere itirazsız kapandı, anchor aldı",
+      "anchorRIP": "940.0000000",
+      "stats": {
+        "total": "100.00",
+        "locked": "0.00",
+        "open": 0
+      },
+      "t": "2026-09-15T21:00:27.728Z"
+    },
+    {
+      "msg": "B: emanet açık, anchor sessiz; kullanıcı T'den önce alamadı (TooEarly)",
+      "t": "2026-09-15T21:01:02.730Z"
+    },
+    {
+      "msg": "✓ B: anchor T'den sonra claim etti, sözleşme reddetti (TooLate)",
+      "t": "2026-09-15T21:02:24.231Z"
+    },
+    {
+      "msg": "✓ B: kullanıcı tek başına geri aldı",
+      "userRIP": "960.0000000",
+      "stats": {
+        "total": "100.00",
+        "locked": "0.00",
+        "open": 0
+      },
+      "t": "2026-09-15T21:02:32.728Z"
+    },
+    {
+      "msg": "✓ C: kullanıcı itiraz etti; itirazlıyken finalize mümkün değil",
+      "t": "2026-09-15T21:02:57.679Z"
+    },
+    {
+      "msg": "✓ C: hakem kullanıcıyı haklı buldu — tutar + %10 ceza kullanıcıya, teminat azaldı",
+      "userBefore": "920.0000000",
+      "userAfter": "964.0000000",
+      "stats": {
+        "total": "96.00",
+        "locked": "0.00",
+        "open": 0
+      },
+      "t": "2026-09-15T21:03:07.768Z"
+    }
+  ],
+  "contract": "CCKGTC4IIHONXWXIZI33T5SYXAGPWUCEKCJBNY5YZRDTPGBSGYZUPVLV",
+  "result": "PASS"
+}

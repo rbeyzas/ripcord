@@ -1,0 +1,22 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm ci
+      - run: npm test
+      - run: npm run build:wallets
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with: { targets: wasm32v1-none }
+      - run: cargo test --locked --manifest-path contracts/ripcord-bond/Cargo.toml
+      - run: cargo build --locked --manifest-path contracts/ripcord-bond/Cargo.toml --target wasm32v1-none --release
+      - name: WASM artefaktı depodakiyle aynı mı
+        run: cmp contracts/ripcord-bond/target/wasm32v1-none/release/ripcord_bond.wasm contracts/ripcord-bond/artifacts/ripcord_bond.wasm && echo "artefakt güncel"

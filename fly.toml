@@ -1,0 +1,21 @@
+# fly launch --no-deploy --copy-config  →  fly secrets import < .env  →  fly deploy
+app = "ripcord-demo"          # fly launch sırasında size özel bir ad seçin
+primary_region = "fra"        # Frankfurt — İstanbul'a en yakın
+
+[build]
+
+[env]
+  PORT = "8080"
+  HOST = "0.0.0.0"
+  ANCHOR_PORT = "4200"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false   # sahnede uyumasın
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"

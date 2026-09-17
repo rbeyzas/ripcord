@@ -1,0 +1,97 @@
+{
+  "network": "testnet",
+  "horizon": "https://horizon-testnet.stellar.org",
+  "at": "2026-09-15T19:45:06.413Z",
+  "steps": [
+    {
+      "msg": "Hesaplar",
+      "issuer": "GDX2BMXMOODCC6XRC4AMQDVELRB3ETLDG2327DX5JIODDD2EZ62LJF6U",
+      "anchor": "GABPBPAJSMDD6IITS4IESOVY6VYG646XCO2DZRDNCBUN67PONM64KV5O",
+      "user": "GCAOOQCOTPRJ4PFLW2GTA3C7USBAUG4BX2XO376BKVNRJQIBSKRJMKIC",
+      "t": "2026-09-15T19:45:06.434Z"
+    },
+    {
+      "msg": "Friendbot ile fonlandı",
+      "t": "2026-09-15T19:45:13.887Z"
+    },
+    {
+      "msg": "Trustline'lar açık, kullanıcıda 100 RIP",
+      "t": "2026-09-15T19:45:27.074Z"
+    },
+    {
+      "msg": "Emanet oluşturuldu",
+      "tx": "de35b63f37f354710f7b800c16decc108942312200aba8ccac59d92ee895425c",
+      "balanceId": "0000000041ee43c243bb03ea56fd292206779991f09174365124e1398c646cec0e14b354",
+      "deadline": "1789501592",
+      "t": "2026-09-15T19:45:32.648Z"
+    },
+    {
+      "msg": "✓ Önceden hesaplanan balanceID ağdakiyle aynı",
+      "t": "2026-09-15T19:45:32.805Z"
+    },
+    {
+      "msg": "✓ Rezerv kilitlendi: 2 alacaklı = 2 giriş sponsorlandı (1 XLM)",
+      "sponsoringBefore": 0,
+      "sponsoringAfterCreate": 2,
+      "t": "2026-09-15T19:45:32.967Z"
+    },
+    {
+      "msg": "✓ Anchor T'den önce talep etti ve aldı",
+      "tx": "c371bf28dd20bb757f00b252e1e7fe6bde1d216a449b88eb85c5b3d3181466f6",
+      "anchorRIP": "10.0000000",
+      "t": "2026-09-15T19:45:37.892Z"
+    },
+    {
+      "msg": "✓ Rezerv oluşturana (kullanıcıya) döndü — anchor'a değil",
+      "sponsoringAfterClaim": 0,
+      "t": "2026-09-15T19:45:38.059Z"
+    },
+    {
+      "msg": "Emanet oluşturuldu",
+      "tx": "a6f6a7526c8aff4daf9665e26d634d0c9e1472ad377e274f3c4be3baea2132bf",
+      "balanceId": "00000000c7374986f58619ae247e1a361bd931c305659e4e6d1530c2cb8ce62b059cf06d",
+      "deadline": "1789501603",
+      "t": "2026-09-15T19:45:42.074Z"
+    },
+    {
+      "msg": "Kullanıcının RIP'i emanette",
+      "userRIP": "80.0000000",
+      "t": "2026-09-15T19:45:42.237Z"
+    },
+    {
+      "msg": "✓ Kullanıcı T'den önce alamadı",
+      "codes": {
+        "transaction": "tx_failed",
+        "operations": [
+          "op_cannot_claim"
+        ]
+      },
+      "t": "2026-09-15T19:45:47.074Z"
+    },
+    {
+      "msg": "Anchor sessiz. T'ye 64 sn…",
+      "t": "2026-09-15T19:45:47.074Z"
+    },
+    {
+      "msg": "✓ Anchor T'den sonra talep etti, REDDEDİLDİ",
+      "codes": {
+        "transaction": "tx_failed",
+        "operations": [
+          "op_cannot_claim"
+        ]
+      },
+      "t": "2026-09-15T19:46:57.636Z"
+    },
+    {
+      "msg": "✓ Kullanıcı parasını KİMSEYE SORMADAN geri aldı",
+      "tx": "143a9a551f806f6e7aa8f61248dd5575c4d6d1379cf6415e8a67ffd75cb97a0d",
+      "userRIP": "90.0000000",
+      "t": "2026-09-15T19:47:02.230Z"
+    },
+    {
+      "msg": "✓ Emanet kaydı silindi",
+      "t": "2026-09-15T19:47:02.379Z"
+    }
+  ],
+  "result": "PASS"
+}

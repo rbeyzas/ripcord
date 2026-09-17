@@ -1,0 +1,7 @@
+node_modules/
+work/
+.env
+*.sqlite*
+.DS_Store
+public/vendor/
+contracts/*/target/

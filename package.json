@@ -1,0 +1,35 @@
+{
+  "name": "ripcord",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Ripcord \u2014 anchor ar\u0131za protokol\u00fc. Anchor teslim etmezse kullan\u0131c\u0131 paras\u0131n\u0131 kimseye sormadan geri al\u0131r.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "escrow:check": "node --env-file-if-exists=.env scripts/escrow-check.mjs",
+    "dev": "npm run build:wallets && node --env-file-if-exists=.env src/server.js",
+    "anchor": "node --env-file-if-exists=.env src/anchor/server.js",
+    "anchor:setup": "node scripts/anchor-setup.mjs",
+    "anchor:check": "node --env-file-if-exists=.env scripts/anchor-check.mjs",
+    "build:wallets": "esbuild src/wallet-entry.js --bundle --format=esm --outfile=public/vendor/wallets.js --minify --target=es2022",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "ui:check": "node --env-file-if-exists=.env scripts/ui-check.mjs",
+    "contract:test": "cargo test --locked --manifest-path contracts/ripcord-bond/Cargo.toml",
+    "contract:build": "cargo build --locked --manifest-path contracts/ripcord-bond/Cargo.toml --target wasm32v1-none --release",
+    "bond:check": "node scripts/bond-check.mjs",
+    "evidence": "node scripts/evidence.mjs",
+    "bonded:check": "node --env-file-if-exists=.env scripts/bonded-ui-check.mjs",
+    "serve": "node --env-file-if-exists=.env src/supervisor.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^17.0.1",
+    "@creit.tech/stellar-wallets-kit": "^2.6.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

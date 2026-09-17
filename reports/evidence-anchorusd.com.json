@@ -1,0 +1,14 @@
+{
+  "domain": "anchorusd.com",
+  "at": "2026-09-15T21:15:35.215Z",
+  "claims": {},
+  "ledger": {},
+  "unreachable": [
+    {
+      "what": "stellar.toml",
+      "ok": false,
+      "status": null,
+      "error": "UND_ERR_CONNECT_TIMEOUT"
+    }
+  ]
+}

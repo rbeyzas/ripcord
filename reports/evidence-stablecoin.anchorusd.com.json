@@ -1,0 +1,47 @@
+{
+  "domain": "stablecoin.anchorusd.com",
+  "at": "2026-09-15T21:16:18.278Z",
+  "claims": {
+    "toml": {
+      "status": "live",
+      "orgName": "AnchorCoin LLC",
+      "transferServer": "https://api.anchorusd.com/transfer/",
+      "transferServer24": "https://api.anchorusd.com/transfer/",
+      "desc": "Cryptocurrency backed one-for-one to the US dollar.  All dollar deposits are held in an audited, US-domiciled escrow account for the exclusive benefit of AnchorUSD token holders."
+    },
+    "asset": {
+      "code": "USD",
+      "issuer": "GDUKMGUGDZQK6YHYA5Z6AY2G4XDSZPSZ3SW5UN3ARVMO6QSRDWP5YLEX"
+    },
+    "info": {
+      "depositEnabled": [
+        "USD"
+      ],
+      "withdrawEnabled": [
+        "USD"
+      ]
+    }
+  },
+  "ledger": {
+    "horizon": {
+      "outstanding": "1929632.9490062",
+      "trustlines": 38350,
+      "flags": {
+        "auth_required": false,
+        "auth_revocable": false,
+        "auth_immutable": false,
+        "auth_clawback_enabled": false
+      }
+    },
+    "market": {
+      "price": 0.31222110337596914,
+      "volume7d": 80346545,
+      "trades": 1459111
+    },
+    "issuer": {
+      "homeDomain": "stablecoin.anchorusd.com",
+      "lastModified": "2026-07-10T02:33:53Z"
+    }
+  },
+  "unreachable": []
+}
